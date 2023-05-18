@@ -8,7 +8,7 @@ To compile a new binary, clone this repository and run `make` from the project d
 
 ## Vault installation
 
-The HCP Vault plugin system is documented on the Hashicorp's [Vault documentation site](https://www.vaultproject.io/docs/internals/plugins.html).
+The HCP Vault plugin system is documented on the HashiCorp's [Vault documentation site](https://www.vaultproject.io/docs/internals/plugins.html).
 
 To install the vault, define the plugin directory using the `plugin_directory` configuration directive and place the `vault-plugin-secrets-buddy` executable in that directory.
 
@@ -29,7 +29,7 @@ Success! Enabled the buddy secrets engine at: buddy/
 
 ### Generating token
 
-To create short-lived tokens, you first need to configure a [root token in Buddy](/docs/api/getting-started/oauth2/personal-access-token). The root token must have the scope `TOKEN_MANAGE`:
+To create short-lived tokens, you first need to configure a [root token in Buddy](https://buddy.works/docs/api/getting-started/oauth2/personal-access-token). The root token must have the scope `TOKEN_MANAGE`:
 
 <img src="/root-token-config.png" width="450">
 
@@ -122,5 +122,5 @@ $ vault lease revoke $lease_id
 To save the token into an environment variable, run
 
 ```sh
-$ TOKEN=$(vault read -format=json buddy/creds/r1 | jq -r .data.token)
+$ TOKEN=$(vault read -format=json buddy/creds/run_pipleine | jq -r .data.token)
 ```
