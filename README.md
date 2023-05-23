@@ -6,7 +6,7 @@ Pre-built binaries for Linux, macOS and Windows can be found in the [releases di
 
 To compile a new binary, clone this repository and run `make` from the project directory.
 
-## Vault installation
+## Vault installation 
 
 The HCP Vault plugin system is documented on the HashiCorp's [Vault documentation site](https://www.vaultproject.io/docs/internals/plugins.html).
 
